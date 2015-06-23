@@ -4,11 +4,16 @@
   <title>Project Name</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/vendor/normalize.css">
+  <link rel="stylesheet" href="css/vendor/foundation.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body ng-app="ButtonModule">
 
-  <div class="container">
+  <div class="container" ng-controller="ButtonController">
+    <form ng-submit="addLike(like)">
+      <button>Like it!</button>
+      <p>This has been liked {{ count() }} time(s)!</p>
+    </form>
 
   </div>
 
@@ -16,8 +21,9 @@
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/underscore.js"></script>
   <script src="js/vendor/handlebars.js"></script>
-  <!-- TEMPLATES -->
-  <script src="js/templates.js"></script>
+
+  <script src="js/vendor/angular.js"></script>
+
   <!-- MAIN -->
   <script src="js/main.js"></script>
 
