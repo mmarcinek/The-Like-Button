@@ -12,7 +12,7 @@
   <div class="container" ng-controller="ButtonController">
     <form ng-submit="addLike(like)">
       <button>Like it!</button>
-      <p>This has been liked {{ count() }} time(s)!</p>
+      <p>This has been liked {{ count() }} {{ plural()}}!</p>
     </form>
 
   </div>
