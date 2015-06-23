@@ -6,8 +6,6 @@
 
   .controller('ButtonController', ['$scope', function ($scope){
 
-    $scope.likes = [];
-
     $scope.likes= 0;
 
     $scope.count = function (){
